@@ -38,3 +38,16 @@ This is my **first project built with React + Supabase** 🎉 — I focused on b
 - **Backend**
   - Supabase (PostgreSQL + Authentication + Row Level Security)
   - Supabase Client SDK (real-time subscriptions for notifications)
+ 
+## ⚙️ Getting Started
+
+1. Clone the repository  
+   ```bash
+   git clone https://github.com/BanksOnOpps/Transport-Complaint.git
+   cd Transport-Complaint
+   
+## Install Dependencies
+npm install
+
+## Start the development server (Vite)
+npm run dev
