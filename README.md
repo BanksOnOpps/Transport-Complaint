@@ -1,12 +1,40 @@
-# React + Vite
+# 🚌 Student Transport Complaint Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A **full-stack web app** where students can submit transport complaints and track their status, while admins can manage and resolve them.  
+This is my **first project built with React + Supabase** 🎉 — I focused on building clean UI components with **styled-components** and managing state/data fetching with **React Query**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+### 👩‍🎓 Student View
+- Submit new transport complaints through a form
+- View list of submitted complaints with live status updates (Pending, Resolved, etc.)
+- Soft-delete complaints (visible only to student but still available to admin)
+- Receive instant toast notifications when complaint status changes
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 👨‍💼 Admin View
+- View all student complaints from a shared Supabase table
+- Update complaint statuses (e.g. mark as Resolved, In Progress)
+- Manage student feedback and notifications
+- Role-based access (student vs. admin)
+
+### 🎨 UI & Styling
+- Component-based styling with `styled-components`
+- Responsive and modern design
+- Interactive navigation and sidebar
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**
+  - React (functional components, hooks)
+  - Styled-components (scoped component styling)
+  - React Query (server state management, pagination, filtering)
+  - React Hook Form (form handling & validation)
+  - React Hot Toast (beautiful notifications)
+
+- **Backend**
+  - Supabase (PostgreSQL + Authentication + Row Level Security)
+  - Supabase Client SDK (real-time subscriptions for notifications)
